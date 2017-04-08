@@ -1,0 +1,20 @@
+{
+  "name": "kronostogcal",
+  "version": "1.0.0",
+  "description": "KronosToGCal by J-F Desrochers",
+  "main": "main.js",
+  "repository": "github:/jfdesrochers/kronostogcal",
+  "scripts": {
+    "package-win": "electron-packager . --overwrite --platform=win32 --arch=x64 --icon=Icon.ico --prune=true --out=../../Desktop/kronostogcal-dist --win32metadata.CompanyName=\"Jean-Francois Desrochers\" --win32metadata.FileDescription=\"KronosToGCal par Jean-Francois Desrochers\" --win32metadata.ProductName=\"KronosToGCal par Jean-Francois Desrochers\" --electron-version=1.4.15",
+    "package-osx": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=Icon.icns --prune=true --out=../../Desktop/kronostogcal-dist --electron-version=1.4.15",
+    "start": "electron ."
+  },
+  "author": "Jean-Francois Desrochers",
+  "license": "ISC",
+  "dependencies": {
+    "googleapis": "^18.0.0",
+    "lodash": "^4.17.4",
+    "mithril": "^1.1.1",
+    "request": "^2.81.0"
+  }
+}
